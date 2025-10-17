@@ -1,0 +1,14 @@
+{
+    "name": "sanjitghosh/auth",
+    "autoload": {
+        "psr-4": {
+            "Sanjitghosh\\Auth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SOUMOJIT GHOSH"
+        }
+    ],
+    "require": {}
+}
