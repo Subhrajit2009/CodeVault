@@ -1,0 +1,166 @@
+CodeVault Website Summary
+=======================
+
+7. Pages — Detailed content inventory
+------------------------------------
+Below is an editor-friendly, content-first inventory for each page. It lists headings, visible copy, form field labels & placeholders, sample entries (blog/tour/pricing), and server messages where applicable.
+
+1) `index.php` (Home)
+    - Page title (HTML): "CodeVault | Future-Ready Coding Solutions"
+    - Hero Badge: "Your Coding Partner"
+    - Typewriter lines (rotating): "Upgrade Your", "Grow with your", "Ignite your" (followed by highlighted "Coding Journey").
+    - Hero paragraph: "We create innovative digital platform for people to interact with each other and share codes. Experience the coding journey of yous with us."
+    - CTA buttons: "Get Started" (links to `auth/register.php`), "Learn More" (scroll to About section).
+    - Statistics block labels and sample numbers:
+       - Projects — 150
+       - User Satisfaction — 98
+       - Years Experience — 12
+    - About/Our Story snippet:
+       - Badge: "Our Story"
+       - Heading sample: "Crafting Coding Excellence Since 2012"
+       - Paragraph sample: "We are a passionate team of designers, developers, and strategists dedicated to creating exceptional coding experiences. Our journey began with a simple vision: to transform ideas into impactful coding solutions that drive growth and innovation."
+    - Team bios (examples present):
+       - John Doe — Creative Director; "Leading our design vision with 10+ years of experience in digital creativity."
+       - Sarah Johnson — Lead Developer; "Transforming designs into flawless digital experiences with cutting-edge tech."
+       - Michael Wang — UX Strategist; "Crafting user-centered experiences that drive engagement and conversion."
+    - Contact section copy:
+       - Badge: "Get In Touch"
+       - Title: "Let's Connect And Create Something Amazing"
+       - Description: "Have a project in mind or want to discuss potential collaboration? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+    - Contact form (client-side) — labels & placeholders:
+       - Label: "Full Name" — input id="name" placeholder="Enter your full name"
+       - Label: "Email Address" — input id="email" placeholder="Enter your email address"
+       - Label: "Subject" — input id="subject" placeholder="What is this regarding?"
+       - Label: "Message" — textarea id="message" placeholder="Tell us about your project or inquiry..."
+       - Submit button text: "Send Message"
+    - App section copy (mobile app promo): title "Code Anywhere with Our Mobile App"; paragraph describing features (Code Editor, Cloud Sync, Real-time Collaboration, Fast Execution); store button text: "Download on the App Store" / "Get it on Google Play".
+
+2) `extra_pages/faq.html` (Help Center)
+    - Page title (HTML): "Help Center | CodeVault"
+    - Hero heading and explanatory paragraph: invites search and browsing of help topics.
+    - Search area copy: search placeholder like "Search help articles..."; primary search button text unspecified (visual: search icon).
+    - Search-result item structure: Title (h3), short description/excerpt, section link.
+    - Help categories section headings: (examples present in layout) "Getting Started", "Account", "Billing", "Technical" (the file includes a categories grid visual).
+    - FAQ item structure (accordion): question (heading), answer (one or more paragraphs).
+    - Contact/support cards and copy: includes "Get In Touch" style copy and small details like "Our Location", "Phone Number", "Email Address" with example values.
+    - Contact/help form fields (if used here): same as `index.php`: name, email, subject, message; submit copy: "Send Message".
+
+3) `extra_pages/about.html` (About)
+    - Page title: "About Us | CodeVault"
+    - Hero area text:
+       - Badge: "Our Story"
+       - Title: "Crafting Coding Excellence Since 2012"
+       - Description paragraph (see index copy block for exact wording).
+    - Mission / values copy sections: headings like "Mission", "Innovation & Creativity at Heart" and paragraph descriptions about goals and approach.
+    - Mission cards text (values): Fast Delivery — "Quick turnaround"; Premium Quality — "Award-winning work"; 24/7 Support — "Always here to help"; Secure & Safe — "Your data protected".
+    - Team section: heading "Meet Our Creative Team", each team member has name, role, short bio and social link labels.
+    - CTA copy examples: "Our Portfolio", "Contact Us".
+
+4) `extra_pages/blog.html` (Blog)
+    - Page title: "Blog | CodeVault"
+    - Hero text: heading "CodeVault Blog", description "Latest insights, tutorials, and updates from our team"
+    - Sample blog posts (each card includes):
+       - Tag, date, title, excerpt, Read More link. Examples from file:
+          - "Mastering React Hooks: A Comprehensive Guide" — March 15, 2024
+          - "Advanced API Security Patterns for 2024" — March 12, 2024
+          - "Serverless Architecture: Cost Optimization Strategies" — March 8, 2024
+          - "Building Intelligent Applications with Machine Learning" — March 5, 2024
+          - "CI/CD Pipeline Optimization for Large Teams" — March 1, 2024
+          - "Database Performance Tuning: Advanced Techniques" — February 25, 2024
+    - Each blog card text elements: tag label (e.g., "Tutorial"), date string, article headline, 1–2 sentence excerpt, "Read More" anchor text.
+
+5) `extra_pages/integrations.html` (Integrations)
+    - Page title: "Integrations | CodeVault"
+    - Hero: heading "Powerful Integrations", description "Connect CodeVault with your favorite tools and supercharge your workflow"
+    - Integration entries (name, status, short description, CTA text). Examples in file:
+       - GitHub — Live — "Sync your repositories, manage pull requests, and automate deployments directly from CodeVault." — CTA: "Connect GitHub"
+       - Slack — Live — "Get real-time notifications, share code snippets, and collaborate with your team in Slack." — CTA: "Connect Slack"
+       - Jira — Live — "Link code changes to Jira issues, track progress, and maintain seamless project management." — CTA: "Connect Jira"
+       - AWS — Live — "Deploy directly to AWS services, manage cloud resources, and monitor performance metrics." — CTA: "Connect AWS"
+       - Docker — Beta — "Build, test, and deploy containerized applications with seamless Docker integration." — CTA: "Join Beta"
+       - VS Code Extension — Coming Soon — "Access CodeVault features directly from your VS Code editor with our upcoming extension." — CTA: "Notify Me"
+
+6) `extra_pages/pricings.html` (Pricing / Subscriptions)
+    - Page title: "Pricing | CodeVault" (hero heading shows "Subscriptions")
+    - Intro line: "Choose the plan that works best for your team and scale as you grow"
+    - Pricing plans (visible text):
+       - Starter
+          - Price: $29 per month
+          - Features bullets: Up to 5 team members; 10GB storage; Basic analytics; Email support; Advanced features; API access
+          - CTA: "Get Started"
+       - Professional (Most Popular)
+          - Price: $79 per month
+          - Features bullets: Up to 20 team members; 100GB storage; Advanced analytics; Priority support; All advanced features; Full API access
+          - CTA: "Get Started"
+       - Enterprise
+          - Price: Custom / tailored for you
+          - Features bullets: Unlimited team members; 1TB+ storage; Custom analytics; 24/7 dedicated support; All features included; Custom integrations
+          - CTA: "Contact Sales"
+    - Pricing notes: generic lines about billing and contacting sales for enterprise plans are present.
+
+7) `extra_pages/privacy.html` (Privacy Policy)
+    - Page title: "Privacy Policy"
+    - Last Updated: "Last Updated: March 15, 2024"
+    - Principal section headings and summary copy:
+       - "1. Information We Collect" — subsections: Personal Information (name, contact, billing), Technical Information (IP, device, browser, usage, cookies).
+       - "2. How We Use Your Information" — lists uses (provide service, process transactions, send updates, security, analytics).
+       - "3. Information Sharing" — notes about Service Providers, Legal Requirements, Business Transfers, Protection of Rights.
+       - "4. Data Security" — mentions encryption, access controls, monitoring.
+       - "5. Your Rights and Choices" — access, correction, deletion, objection, portability, withdraw consent.
+       - "6. Data Retention" — retention rationale and considerations.
+       - "7. International Data Transfers" — mention of safeguards like Standard Contractual Clauses.
+       - "8. Changes to This Policy" — process for updates and last-updated date.
+    - Contact block text: email privacy@codevault.com and postal address example.
+
+8) `extra_pages/tutorials.html` (Tutorials)
+    - Page title: "Tutorials | CodeVault" (hero: "Learn & Master CodeVault")
+    - Intro paragraph: "Comprehensive tutorials to help you get the most out of our platform"
+    - Category buttons (visible labels): All Tutorials, Getting Started, Advanced Features, API Guides, Best Practices
+    - Tutorial cards (visible fields): level label (Beginner / Intermediate / Advanced), duration (e.g., 45 min, 1.5 hours), title, short description, stats (lessons, project files, code examples, live demo), CTA text "Start Tutorial" or "Start Tutorial" with play icon.
+    - Example tutorial titles and metadata in file:
+       - "Getting Started with CodeVault" — Beginner — 45 min — 12 lessons — Project files
+       - "API Integration Masterclass" — Intermediate — 1.5 hours — 8 lessons — Code examples
+       - "Advanced Deployment Strategies" — Advanced — 2 hours — 10 lessons — Live demo
+       - "Team Collaboration Basics" — Beginner — 30 min — 6 lessons — Team guide
+       - "Security Best Practices" — Intermediate — 1 hour — 7 lessons — Security checklist
+       - "Performance Optimization" — Advanced — 2.5 hours — 9 lessons — Performance tools
+
+9) `send-mail.php` (server contact handler)
+    - Expected POST fields (names exactly): name, email, subject, message
+    - Early validation responses (plain text):
+       - "missing_fields" — returned when name, subject, email or message are empty
+       - "invalid_format" — returned when email fails FILTER_VALIDATE_EMAIL
+    - Database error responses: prefixed with "db_error: " followed by MySQL error text (e.g., "db_error: <error>")
+    - Mailer responses returned from smtp_mailer():
+       - "Sent" — when PHPMailer successfully sends the email
+       - "mail_error: <info>" — on failure to send (PHPMailer ErrorInfo)
+       - "mail_exception: <message>" — if an exception is thrown
+    - Email template visible content (HTML template assembled in PHP):
+       - Header title: "New Help Request - CodeVault"
+       - Content fields shown: From (sender name), Email (sender email), Subject, Message (HTML-escaped, line breaks preserved)
+       - Footer lines: "This message was sent from CodeVault Help Center" and copyright with current year
+
+Notes about content scope
+------------------------
+- The inventory above focuses on visible copy and field names present in each file. It includes explicit sample text and exact POST/response tokens used by the contact handler.
+- I intentionally omitted CSS classes, inline styles and library/plugin mentions except where they affect visible copy (e.g., button text, placeholders).
+
+
+5. Technical Stack
+----------------
+- HTML5
+- CSS3
+- PHP
+- Modern JavaScript
+- External libraries integration
+   - Font Awesome
+   - Ionicons
+   - Google Fonts
+
+6. Contact & Support
+------------------
+- Contact form for inquiries
+- FAQ section for quick answers
+- User profile management
+
+This summary represents the core aspects of the CodeVault website, highlighting its main features and structural organization. The platform is designed to be user-friendly while maintaining professional standards in web development and user experience.
